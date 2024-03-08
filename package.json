@@ -1,18 +1,17 @@
 {
-  "name": "pkg-placeholder",
+  "name": "rune-utils",
   "type": "module",
   "version": "0.0.0",
   "packageManager": "pnpm@8.15.3",
-  "description": "_description_",
-  "author": "Anthony Fu <anthonyfu117@hotmail.com>",
+  "description": "Rune utils.",
+  "author": "Stone <hello@utxone.xyz>",
   "license": "MIT",
-  "funding": "https://github.com/sponsors/antfu",
-  "homepage": "https://github.com/antfu/pkg-placeholder#readme",
+  "homepage": "https://github.com/utxone/rune-utils#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/antfu/pkg-placeholder.git"
+    "url": "git+https://github.com/utxone/rune-utils.git"
   },
-  "bugs": "https://github.com/antfu/pkg-placeholder/issues",
+  "bugs": "https://github.com/utxone/rune-utils/issues",
   "keywords": [],
   "sideEffects": false,
   "exports": {
@@ -49,7 +48,6 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.6.4",
-    "@antfu/ni": "^0.21.12",
     "@antfu/utils": "^0.7.7",
     "@types/node": "^20.11.19",
     "bumpp": "^9.3.0",
