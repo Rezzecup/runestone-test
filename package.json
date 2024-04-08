@@ -46,6 +46,9 @@
     "typecheck": "tsc --noEmit",
     "prepare": "simple-git-hooks"
   },
+  "dependencies": {
+    "@cmdcode/tapscript": "^1.4.6"
+  },
   "devDependencies": {
     "@antfu/eslint-config": "^2.6.4",
     "@antfu/utils": "^0.7.7",
