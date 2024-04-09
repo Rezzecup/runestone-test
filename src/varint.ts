@@ -21,5 +21,5 @@ export function encodeToVec(n: bigint | number, v: Uint8Array): Uint8Array {
     n >>= 7n
   }
   r.push(n & 0b0111_1111n)
-  return r.map(x => Number(x)) as unknown as Uint8Array
+  return new Uint8Array(r.map(x => Number(x)))
 }

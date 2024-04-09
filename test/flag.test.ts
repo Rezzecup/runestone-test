@@ -14,5 +14,6 @@ describe('flag test', () => {
   })
   it('set', () => {
     expect(setFlag(Flag.Etching, 0)).toEqual(1)
+    expect(setFlag(Flag.Etching, 0)).toEqual(1)
   })
 })

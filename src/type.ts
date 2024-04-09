@@ -15,16 +15,16 @@ export interface Mint {
 export interface Terms {
   amount?: bigint
   cap?: bigint
-  height: [number | undefined, number | undefined]
+  height: [bigint | number | undefined, number | undefined]
   offset: [number | undefined, number | undefined]
 }
 
 export interface Etching {
-  divisibility: number
+  divisibility?: number
   mint?: Mint
   rune?: Rune
   premine?: bigint
-  spacers: number
+  spacers?: number
   symbol?: string
   terms?: Terms
 }

@@ -1,3 +1,4 @@
+import { bytesToHex } from './utils'
 import { encodeToVec } from './varint'
 
 export enum Tag {
@@ -30,7 +31,7 @@ export function encodeTag(tag: Tag, payload: Uint8Array, values?: (bigint | numb
   let v = payload
   if (typeof values === 'string') {
     const encoder = new TextEncoder()
-    values = Array.from(encoder.encode(values)).map(x => BigInt(x))
+    values = [BigInt(bytesToHex(encoder.encode(values)))]
   }
   if (!values || values.filter(x => x !== undefined).length === 0)
     return v
