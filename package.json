@@ -1,7 +1,7 @@
 {
   "name": "rune-utils",
   "type": "module",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "packageManager": "pnpm@8.15.3",
   "description": "Rune utils.",
   "author": "Stone <hello@utxone.xyz>",
