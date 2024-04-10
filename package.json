@@ -1,5 +1,5 @@
 {
-  "name": "rune-utils",
+  "name": "runestone",
   "type": "module",
   "version": "0.1.0",
   "packageManager": "pnpm@8.15.3",
