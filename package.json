@@ -1,17 +1,17 @@
 {
-  "name": "runestone",
+  "name": "@utxone/runestone",
   "type": "module",
-  "version": "0.1.0",
+  "version": "0.1.6",
   "packageManager": "pnpm@8.15.3",
   "description": "Rune utils.",
   "author": "Stone <hello@utxone.xyz>",
   "license": "MIT",
-  "homepage": "https://github.com/utxone/rune-utils#readme",
+  "homepage": "https://github.com/utxone/runestone#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/utxone/rune-utils.git"
+    "url": "git+https://github.com/utxone/runestone.git"
   },
-  "bugs": "https://github.com/utxone/rune-utils/issues",
+  "bugs": "https://github.com/utxone/runestone/issues",
   "keywords": [],
   "sideEffects": false,
   "exports": {
@@ -39,15 +39,11 @@
     "build": "unbuild",
     "dev": "unbuild --stub",
     "lint": "eslint .",
-    "prepublishOnly": "nr build",
     "release": "bumpp && npm publish",
     "start": "esno src/index.ts",
     "test": "vitest",
     "typecheck": "tsc --noEmit",
     "prepare": "simple-git-hooks"
-  },
-  "dependencies": {
-    "@cmdcode/tapscript": "^1.4.6"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.6.4",

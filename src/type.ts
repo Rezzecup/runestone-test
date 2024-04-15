@@ -28,3 +28,5 @@ export interface Etching {
   symbol?: string
   terms?: Terms
 }
+
+export type ScriptData = string | Uint8Array

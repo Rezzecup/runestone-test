@@ -1,9 +1,9 @@
-import { Script } from '@cmdcode/tapscript'
 import { Flag, setFlag } from './flag'
 import type { Edict, Etching } from './type'
 import { RuneId } from './rune-id'
 import { Tag, encodeTag } from './tag'
 import { encodeToVec } from './varint'
+import { encodeScript } from './script'
 
 export class Runestone {
   burn = false
@@ -12,11 +12,13 @@ export class Runestone {
   edicts: Edict[]
   etching?: Etching
   mint?: RuneId
-  pointer?: bigint
+  pointer?: number
 
-  constructor({ edicts, etching }: { edicts?: Edict[], etching?: Etching }) {
+  constructor({ edicts, etching, pointer, mint }: { edicts?: Edict[], etching?: Etching, pointer?: number, mint?: RuneId }) {
     this.edicts = edicts ?? []
     this.etching = etching
+    this.pointer = pointer
+    this.mint = mint
   }
 
   encipher(): string {
@@ -49,7 +51,7 @@ export class Runestone {
     if (this.edicts && this.edicts?.length > 0) {
       payload = encodeToVec(Tag.Body, payload)
       const edictsClone = this.edicts.sort((a, b) => Number(a.id.block - b.id.block)).sort((a, b) => Number(a.id.tx - b.id.tx))
-      let previous = new RuneId(0n, 0n)
+      let previous = new RuneId(0, 0)
       for (const edict of edictsClone) {
         const [block, tx] = previous.delta(edict.id)
         payload = encodeToVec(block, payload)
@@ -59,6 +61,6 @@ export class Runestone {
         previous = edict.id
       }
     }
-    return Script.encode(['OP_RETURN', 'OP_13', payload], false).toHex()
+    return encodeScript(['OP_RETURN', 'OP_13', payload])
   }
 }

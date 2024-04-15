@@ -42,7 +42,7 @@ describe('runestone test', () => {
         edicts: [
           {
             amount: 0n,
-            id: new RuneId(0n, 0n),
+            id: new RuneId(0, 0),
             output: 0n,
           },
         ],
@@ -60,7 +60,7 @@ describe('runestone test', () => {
         edicts: [
           {
             amount: 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFn,
-            id: new RuneId(0n, 0n),
+            id: new RuneId(0, 0),
             output: 0n,
           },
         ],
@@ -78,7 +78,7 @@ describe('runestone test', () => {
         edicts: [
           {
             amount: 0n,
-            id: new RuneId(1_000_000n, 4294967295n),
+            id: new RuneId(1_000_000, 4294967295),
             output: 0n,
           },
         ],
@@ -92,7 +92,7 @@ describe('runestone test', () => {
         edicts: [
           {
             amount: 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFn,
-            id: new RuneId(1_000_000n, 4294967295n),
+            id: new RuneId(1_000_000, 4294967295),
             output: 0n,
           },
         ],
@@ -106,12 +106,12 @@ describe('runestone test', () => {
         edicts: [
           {
             amount: 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFn,
-            id: new RuneId(1_000_000n, 4294967295n),
+            id: new RuneId(1_000_000, 4294967295),
             output: 0n,
           },
           {
             amount: 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFn,
-            id: new RuneId(1_000_000n, 4294967295n),
+            id: new RuneId(1_000_000, 4294967295),
             output: 0n,
           },
         ],
@@ -125,17 +125,17 @@ describe('runestone test', () => {
         edicts: [
           {
             amount: 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFn,
-            id: new RuneId(1_000_000n, 4294967295n),
+            id: new RuneId(1_000_000, 4294967295),
             output: 0n,
           },
           {
             amount: 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFn,
-            id: new RuneId(1_000_000n, 4294967295n),
+            id: new RuneId(1_000_000, 4294967295),
             output: 0n,
           },
           {
             amount: 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFn,
-            id: new RuneId(1_000_000n, 4294967295n),
+            id: new RuneId(1_000_000, 4294967295),
             output: 0n,
           },
         ],
