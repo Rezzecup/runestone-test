@@ -1,4 +1,4 @@
-# @utxone/runestone
+# @chain-wave/runestone-test
 
 [![npm version][npm-version-src]][npm-version-href]
 [![License][license-src]][license-href]
